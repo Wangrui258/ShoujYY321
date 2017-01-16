@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main1Activity">
+
+    <include layout="@layout/titlebar"/>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/fl_mainc_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+
+        android:id="@+id/fg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11000000"
+        android:padding="5dp"
+
+        >
+        <RadioButton
+            android:id="@+id/rb_local_video"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_local_video_selector"
+            style="@style/botton_button_style"
+            android:text="本地视频"
+            />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_local_audio"
+            android:drawableTop="@drawable/rb_local_audio_selector"
+            style="@style/botton_button_style"
+            android:text="本地音频"
+            />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_net_video"
+            android:drawableTop="@drawable/rb_net_video_selector"
+            style="@style/botton_button_style"
+            android:text="网络视频"
+            />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_net_audio"
+            android:drawableTop="@drawable/rb_net_audio_selector"
+            style="@style/botton_button_style"
+            android:text="网络音乐"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_Recyclerview"
+            android:drawableTop="@drawable/rb_net_audio_selector"
+            style="@style/botton_button_style"
+            android:text="Recyclerview"
+            />
+    </RadioGroup>
+</LinearLayout>
